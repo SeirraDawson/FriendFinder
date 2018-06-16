@@ -1,23 +1,22 @@
-//dummy friend data - could be an empty array if needed.
-
-var friends =
-[
+//dummy friend data
+var friends = [
   {
-    "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-    "scores":[
-        5,
-        1,
-        4,
-        4,
-        5,
-        1,
-        2,
-        5,
-        4,
-        1
-      ]
-  }
+    "name":"Issa Rae",
+    "photo":"https://res.cloudinary.com/sdawson/image/upload/v1529152085/issaRae_lqf1oh.png",
+    "scores":[3,2,4,3,2,4,1,2,5,4]
+  },{
+    "name":"Harriet Tubman",
+    "photo":"https://res.cloudinary.com/sdawson/image/upload/v1529152084/harrietTubman_nrbt0n.jpg",
+    "scores":[1,2,4,3,3,5,1,3,2,1]
+  },{
+    "name":"Oprah Winfrey",
+    "photo":"http://res.cloudinary.com/sdawson/image/upload/v1529152085/Oprah_Winfrey_d6vjck.jpg",
+    "scores":[3,1,2,5,3,2,1,3,2,2]
+  },{
+    "name":"Michelle Obama",
+    "photo":"https://res.cloudinary.com/sdawson/image/upload/v1529152084/mObama_zsmv4l.jpg",
+    "scores":[2,4,5,5,3,2,1,4,5,2]
+  },
 ];
 
 //This exports the array. Making it accessible to other files using 'require.'

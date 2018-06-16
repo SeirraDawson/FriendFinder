@@ -3,6 +3,11 @@ var path = require("path");
 
 // GET Route to `/survey` which should display the survey page.
 module.exports = function(app) {
+  //basic route that send the user to the homepage
+  app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname + "/../public/home.html"));
+  });
+
   //route to display survey.html
   app.get("/survey", function(req, res) {
     res.sendFile(path.join(__dirname + "/../public/survey.html"));
