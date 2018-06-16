@@ -1,7 +1,6 @@
 //Dependencies = npm packages that give the server functionality
 var express = require("express");
 var bodyParser = require("body-parser");
-var path = require('path');;
 
 //creat the express server
 var app = express();

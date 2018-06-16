@@ -8,7 +8,7 @@ module.exports = function(app) {
   // A GET route with the url `/api/friends`. This will be used to display a JSON of all possible friends.
   app.get("/api/friends", function(req, res) {
     res.json(friends);
-    console.log(req);
+    // console.log(req);
   });
 
   // A POST routes `/api/friends`. This will be used to handle incoming survey results.
@@ -21,13 +21,10 @@ module.exports = function(app) {
     };
 
     // Take the survey results POST and parse it
-    var userData 	= req.body;
-    // console.log(userData);
-    var userName 	= userData.name;
-    // console.log(userName);
-    var userImg 	= userData.photo;
-    // console.log(userImg);
-    var userScores 	= userData.scores;
+    var userData = req.body;
+    // console.log('userData= '+ JSON.stringify(userData));
+
+    var userScores = userData.scores;
     // console.log(userScores);
 
     var totalDifference = 0;
